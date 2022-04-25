@@ -5,6 +5,7 @@ import lombok.NoArgsConstructor;
 import mk.ukim.finki.emt.lab2.emt.model.enumerator.Category;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
@@ -13,6 +14,7 @@ import javax.persistence.ManyToOne;
 public class Book {
 
     @Id
+    @GeneratedValue
     private Long id;
 
     private String name;
